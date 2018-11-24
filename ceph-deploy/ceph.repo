@@ -18,5 +18,4 @@ gpgcheck=1
 type=rpm-md
 gpgkey=http://mirrors.aliyun.com/ceph/keys/release.asc
 priority=1
-EOF
 
