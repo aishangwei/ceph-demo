@@ -5,9 +5,9 @@ export passwd="ceph-admin"
 export node1="c720181"
 export node1="c720182"
 export node1="c720183"
-export node1-ip="192.168.20.181"
-export node2-ip="192.168.20.182"
-export node3-ip="192.168.20.183"
+export node1_ip="192.168.20.181"
+export node2_ip="192.168.20.182"
+export node3_ip="192.168.20.183"
 
 
 # 配置 rpm
@@ -36,9 +36,9 @@ setenforce 0
 
 # 配置主机名解析，使用  /etc/hosts,或者dns
 cat >>/etc/hosts<<EOF
-$node1-ip     $node1
-$node2-ip     $node2
-$node3-ip     $node3
+$node1_ip     $node1
+$node2_ip     $node2
+$node3_ip     $node3
 EOF
 
 // 配置sudo不需要tty
