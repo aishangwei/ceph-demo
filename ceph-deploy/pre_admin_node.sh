@@ -1,12 +1,16 @@
+
+
+
 # 配置免密钥登录
 su - ceph-admin
+export username=ceph-admin
 ssh-keygen
 ssh-copy-id ${username}@c720181
 ssh-copy-id ${username}@c720182
 ssh-copy-id ${username}@c720183
 
 # 安装 ceph-deploy
-yum install -y  ceph-deploy
+sudo yum install -y  ceph-deploy python-pip
 
 #
 mkdir  my-cluster
