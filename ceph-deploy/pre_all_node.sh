@@ -20,8 +20,8 @@ systemctl restart ntpd ntpdate && systemctl enable ntpd ntpdate
 
 # 创建部署用户和ssh免密码登录
 useradd ${username}
-echo “${passwd}” | passwd --stdin ${username}
-echo “${username} ALL = (root) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/${username}
+echo "${passwd}" | passwd --stdin ${username}
+echo "${username} ALL = (root) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/${username}
 chmod 0440 /etc/sudoers.d/${username}
 
 # 配置防火墙，或者关闭
