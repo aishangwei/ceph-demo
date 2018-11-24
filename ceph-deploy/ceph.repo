@@ -1,6 +1,6 @@
 [ceph]
 name=ceph
-baseurl=http://mirrors.aliyun.com/ceph/rpm-luminous/el7/
+baseurl=http://mirrors.aliyun.com/ceph/rpm-luminous/el7/x86_64/
 gpgcheck=0
 priority=1
 
