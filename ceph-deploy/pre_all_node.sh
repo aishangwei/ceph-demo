@@ -3,8 +3,8 @@
 export username="ceph-admin"
 export passwd="ceph-admin"
 export node1="c720181"
-export node1="c720182"
-export node1="c720183"
+export node2="c720182"
+export node3="c720183"
 export node1_ip="192.168.20.181"
 export node2_ip="192.168.20.182"
 export node3_ip="192.168.20.183"
@@ -41,5 +41,5 @@ $node2_ip     $node2
 $node3_ip     $node3
 EOF
 
-// 配置sudo不需要tty
+# 配置sudo不需要tty
 sed -i 's/Default requiretty/#Default requiretty/' /etc/sudoers
